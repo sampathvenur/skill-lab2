@@ -1,0 +1,112 @@
+body {
+    background-image: url("/images/background.png");
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit:fill;
+    width: 100%;
+}
+
+.card {
+    transition: transform 0.2s, opacity 1s;
+    opacity: 0;
+    transform: translateY(50px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.book-img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: #5e1b1b;
+    padding: 20px 0;
+}
+
+.footer .list-inline {
+    margin-top: 10px;
+}
+
+.footer .list-inline-item {
+    margin: 0 10px;
+}
+
+.footer .list-inline-item a {
+    color: #6c757d;
+}
+
+.footer .list-inline-item a:hover {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.card-small {
+    max-width: 100%;
+    margin: auto;
+}
+
+.card-small .card-body {
+    padding: 0.5rem;
+}
+
+.card-small .card-title {
+    font-size: 1rem;
+}
+
+.card-small .card-text {
+    font-size: 0.875rem;
+}
+
+.featured-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #3f1912;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    border-right: .15em solid orange;
+    height: 1.2em;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+.typing-effect {
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
